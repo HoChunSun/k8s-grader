@@ -79,7 +79,7 @@ def run_tests(test_phase: GamePhrase, game: str, task: str):
 def get_tests():
     # TODO: Change this to S3 bucket download
     if not os.path.exists("/tmp/k8s-game-rule-main.zip"):
-        url = "https://github.com/practical-bootcamp/k8s-game-rule/archive/refs/heads/main.zip"
+        url = "https://github.com/HoChunSun/k8s-game-rule/archive/refs/heads/main.zip"
         urllib.request.urlretrieve(url, "/tmp/k8s-game-rule-main.zip")
         shutil.unpack_archive("/tmp/k8s-game-rule-main.zip", "/tmp/")
 
